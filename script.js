@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     xhr.onreadystatechange = function () {
         if (xhr.readyState == 4 && xhr.status == 200) {
             var xmlDoc = xhr.responseXML;
-            var dragons = xmlDoc.getElementsByTagName("dragon");
+            var dragons = xmlDoc.getElementsByTagName("dragonName");
 
             // Handle search input
             var searchInput = document.getElementById("searchInput");
