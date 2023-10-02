@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Handle search input
             var searchInput = document.getElementById("searchInput");
-            searchInput.addEventListener("keyup", function () {
+            searchInput.addEventListener("click", function () {
                 var searchTerm = searchInput.value.toLowerCase();
                 displayResults(dragons, searchTerm);
             });
@@ -29,6 +29,8 @@ document.addEventListener("DOMContentLoaded", function () {
     };
     xhr.send();
 });
+
+
 
 function displayResults(dragons, searchTerm) {
     var tableBody = document.getElementById("tableBody");
