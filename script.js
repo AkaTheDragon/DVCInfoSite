@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
             });
 
             // Initial display of all dragons
-            displayResults(dragons, Afrit);
+            displayResults(dragons, "");
         }
     };
     xhr.send();
