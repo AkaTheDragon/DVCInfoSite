@@ -39,5 +39,13 @@
         <sprite>Sprite 1</sprite>
         <artwork>Artwork 1</artwork>
     </dragon>
+	<dragon>
+        <dragonName>Obex</dragonName>
+        <eggDescription>Wants to create space</eggDescription>
+        <location>Crystal Mine</location>
+		<eggSprite>Egg Sprite 1</eggSprite>
+        <sprite>Sprite 1</sprite>
+        <artwork>Artwork 1</artwork>
+    </dragon>
     <!-- Add more dragon entries here -->
 </dragons>
