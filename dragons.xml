@@ -1,0 +1,43 @@
+<dragons>
+    <dragon>
+        <dragonName>Afrit</dragonName>
+        <eggDescription>This Egg is tightly sealed.</eggDescription>
+        <location>Rainbow Garden</location>
+		<eggSprite>https://static.wikia.nocookie.net/dragon-village-collection/images/c/c4/Imageafritegg.png</eggSprite>
+        <sprite>
+            <table>
+                <tr>
+                    <td>https://static.wikia.nocookie.net/dragon-village-collection/images/5/5e/1TQFWLquwdwsK4bKYVQIR4rPlsR_WzNtQYZ6kfjX4Pg.png</td>
+                    <td>https://static.wikia.nocookie.net/dragon-village-collection/images/f/fe/1tNIDezvaOUMDz4SGO0YlqKLzMwfx0XPstxfYvSI3tg.png</td>
+                    <td>https://static.wikia.nocookie.net/dragon-village-collection/images/1/17/1OAz0p5EIKa73AunvioUfXPboQcxZrpXbVPrliZHquQ.png</td>
+                </tr>
+                <tr>
+                    <td>https://static.wikia.nocookie.net/dragon-village-collection/images/2/23/1r5etQyQf43oZX5jqQ3htjwG0eIxh4JiaSwv6jnvtQw.png</td>
+                    <td>https://static.wikia.nocookie.net/dragon-village-collection/images/e/eb/1DOXqc1pF2MZYu2IVQUN598jZtptNpYxFfUR0nMBOjQ.png</td>
+                    <td>https://static.wikia.nocookie.net/dragon-village-collection/images/2/20/1iOAsmaiP0QKLreVg7WSMeewVVK2eYTmqouJgDVVKMw.png</td>
+                </tr>
+            </table>
+        </sprite>
+        <artwork>
+			<table>
+                <tr>
+                    <td>https://static.wikia.nocookie.net/dragon-village-collection/images/6/63/1f44_qwgJlZL0GRfzOYaLuy6Vzahm_QivU_5pR1wxNQ.png</td>
+                    <td>https://static.wikia.nocookie.net/dragon-village-collection/images/3/39/15bLDtSDST0O-7lgTwuarCX8GwEVZ28azahU9LaxZ9Q.png</td>
+                </tr>
+                <tr>
+                    <td>https://static.wikia.nocookie.net/dragon-village-collection/images/6/6e/1SnYxwcrqIu4bwZoSpfAq6tBpavP-oV1ShH61w0-wwg.png</td>
+                    <td>https://static.wikia.nocookie.net/dragon-village-collection/images/a/a3/10OAibHlEXVhNkBAiMjhssskEyq0soWgImvNhcBjbFA.png</td>
+                </tr>
+            </table>
+		</artwork>
+   </dragon>
+	<dragon>
+        <dragonName>Alien Dragon</dragonName>
+        <eggDescription>The ring around this Egg is very delicate.</eggDescription>
+        <location>Wind Temple, Forest of Hope</location>
+		<eggSprite>Egg Sprite 1</eggSprite>
+        <sprite>Sprite 1</sprite>
+        <artwork>Artwork 1</artwork>
+    </dragon>
+    <!-- Add more dragon entries here -->
+</dragons>
