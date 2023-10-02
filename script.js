@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     xhr.onreadystatechange = function () {
         if (xhr.readyState == 4 && xhr.status == 200) {
             var xmlDoc = xhr.responseXML;
-            var dragons = xmlDoc.getElementsByTagName("dragonName");
+            var dragons = xmlDoc.getElementsByTagName("dragon");
 
             // Handle search input
             var searchInput = document.getElementById("searchInput");
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
             });
 
             // Initial display of all dragons
-            displayResults(dragons, "");
+            displayResults(dragons, "Afrit");
         }
     };
     xhr.send();
