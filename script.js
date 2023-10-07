@@ -128,10 +128,10 @@ function parseNestedTable(nestedTable) {
 //  document.getElementById("page").style.display = "block";
 //}
 
-//document.getElementById("a").onclick = function(e) {
-//  e.preventDefault();
-//  document.getElementById("popup").showpopup();
-//}
+document.getElementById("a").onclick = function(e) {
+  e.preventDefault();
+  document.getElementById("popup").showpopup();
+}
 
 //document.getElementById('page').onclick = function() {
 //  if(document.getElementById("popup").style.display == "block") {
