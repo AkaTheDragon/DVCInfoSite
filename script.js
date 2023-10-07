@@ -53,6 +53,7 @@ function displayResults(dragons, searchTerm) {
 		var dragonNameA = document.createElement("a");
 		dragonNameA.setAttribute = ("href", "");
 		dragonNameA.setAttribute = ("id", "a");
+		dragonNameA.style.fontSize='5rem';
         dragonNameCell.appendChild(dragonNameA);
         dragonNameA.textContent = dragonName;
 
@@ -123,7 +124,7 @@ function parseNestedTable(nestedTable) {
 
 document.getElementById("popup").showpopup = function() {
   document.getElementById("popup").style.display = "block";
-  document.getElementById('iframe').src = "http://w.com";
+  document.getElementById('iframe').src = "http://www.google.com";
   document.getElementById('page').className = "darken";
   document.getElementById("page").style.display = "block";
 }
