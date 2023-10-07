@@ -51,12 +51,12 @@ function displayResults(dragons, searchTerm) {
 
         // Create and append cells for dragon information
         var dragonNameCell = document.createElement("td");
-		var dragonNameA = document.createElement("a");
 		row.appendChild(dragonNameCell);
-        dragonNameCell.appendChild(dragonNameA);
+		var dragonNameA = document.createElement("a");
 		dragonNameA.setAttribute = ("href", "");
 		dragonNameA.setAttribute = ("id", "a");
-        dragonName.textContent = dragonName;
+        dragonNameCell.appendChild(dragonNameA);
+        dragonNameA.textContent = dragonName;
 
         var eggDescriptionCell = document.createElement("td");
         eggDescriptionCell.textContent = eggDescription;
