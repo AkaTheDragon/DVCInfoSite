@@ -1,3 +1,24 @@
+document.getElementById("popup").showpopup = function() {
+  document.getElementById("popup").style.display = "block";
+  document.getElementById('iframe').src = "http://example.com";
+  document.getElementById('page').className = "darken";
+  document.getElementById("page").style.display = "block";
+}
+
+document.getElementById("a").onclick = function(e) {
+  e.preventDefault();
+  document.getElementById("popup").showpopup();
+}
+
+document.getElementById('page').onclick = function() {
+  if(document.getElementById("popup").style.display == "block") {
+    document.getElementById("popup").style.display = "none";
+    document.getElementById("page").style.display = "none";
+    document.getElementById('page').className = "";
+  }
+};
+
+
 document.addEventListener("DOMContentLoaded", function () {
     // Load XML data using XMLHttpRequest
     var xhr = new XMLHttpRequest();
@@ -49,8 +70,11 @@ function displayResults(dragons, searchTerm) {
 
         // Create and append cells for dragon information
         var dragonNameCell = document.createElement("td");
-        dragonNameCell.textContent = dragonName;
-        row.appendChild(dragonNameCell);
+		var dragonNameA = document.createElement("a");
+		row.appendChild(dragonNameCell);
+        dragonNameCell.appendChild(dragonNameA);
+		dragonNameA.setAttribute = ("id", "a");
+        dragonName.textContent = dragonName;
 
         var eggDescriptionCell = document.createElement("td");
         eggDescriptionCell.textContent = eggDescription;
@@ -115,22 +139,3 @@ function parseNestedTable(nestedTable) {
     }
     return table;
 }
-document.getElementById("popup").showpopup = function() {
-  document.getElementById("popup").style.display = "block";
-  document.getElementById('iframe').src = "index.html";
-  document.getElementById('page').className = "darken";
-  document.getElementById("page").style.display = "block";
-}
-
-document.getElementById("a").onclick = function(e) {
-  e.preventDefault();
-  document.getElementById("popup").showpopup();
-}
-
-document.getElementById('page').onclick = function() {
-  if(document.getElementById("popup").style.display == "block") {
-    document.getElementById("popup").style.display = "none";
-    document.getElementById("page").style.display = "none";
-    document.getElementById('page').className = "";
-  }
-};
