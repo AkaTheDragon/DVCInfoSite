@@ -121,12 +121,12 @@ function parseNestedTable(nestedTable) {
 }
 
 
-//document.getElementById("popup").showpopup = function() {
-//  document.getElementById("popup").style.display = "block";
-//  document.getElementById('iframe').src = "http://w.com";
-//  document.getElementById('page').className = "darken";
-//  document.getElementById("page").style.display = "block";
-//}
+document.getElementById("popup").showpopup = function() {
+  document.getElementById("popup").style.display = "block";
+  document.getElementById('iframe').src = "http://w.com";
+  document.getElementById('page').className = "darken";
+  document.getElementById("page").style.display = "block";
+}
 
 document.getElementById("a").onclick = function(e) {
   e.preventDefault();
