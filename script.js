@@ -72,6 +72,7 @@ function displayResults(dragons, searchTerm) {
         var dragonNameCell = document.createElement("td");
         dragonNameCell.textContent = dragonName;
 		dragonNameCell.setAttribute = ("id", "a");
+		dragonNameCell.setAttribute = ("onClick", "a");
         row.appendChild(dragonNameCell);
 
         var eggDescriptionCell = document.createElement("td");
