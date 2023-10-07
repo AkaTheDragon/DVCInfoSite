@@ -71,6 +71,7 @@ function displayResults(dragons, searchTerm) {
         // Create and append cells for dragon information
         var dragonNameCell = document.createElement("td");
         dragonNameCell.textContent = dragonName;
+		dragonNameCell.setAttribute = ("id", "a");
         row.appendChild(dragonNameCell);
 
         var eggDescriptionCell = document.createElement("td");
