@@ -1,6 +1,6 @@
 document.getElementById("popup").showpopup = function() {
   document.getElementById("popup").style.display = "block";
-  document.getElementById('iframe').src = "http://example.com";
+  document.getElementById('iframe').src = "http://www.google.com";
   document.getElementById('page').className = "darken";
   document.getElementById("page").style.display = "block";
 }
