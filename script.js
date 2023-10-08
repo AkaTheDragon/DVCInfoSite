@@ -143,7 +143,7 @@ if(document.getElementById("popup").style.display == "block") {
    document.getElementById("page").style.display = "none";
    document.getElementById("page").className = "";
  }
-}
+};
 };
 
 
