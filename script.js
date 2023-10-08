@@ -121,8 +121,8 @@ function parseNestedTable(nestedTable) {
 }
 
 window.onload = function(){ 
-document.getElementById("a").onclick = function(e) {
- e.preventDefault();
+document.getElementById("a").addEventListener("click", function(event)) {
+ event.preventDefault();
  document.getElementById("popup").showpopup();
 }
 };
