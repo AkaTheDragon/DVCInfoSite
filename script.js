@@ -147,7 +147,7 @@ if(document.getElementById("popup").style.display == "block") {
 };
 
 window.onload = function(){ 
-document.getElementByClass("a").onclick = function(e) {
+document.getElementByClassName("a").onclick = function(e) {
   e.preventDefault();
   var isInit = true; // indicates if the popup already been initialized.
   var isClosed = false; // indicates the state of the popup
