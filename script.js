@@ -147,8 +147,8 @@ if(document.getElementById("popup").style.display == "block") {
 };
 
 window.onload = function(){ 
-document.getElementsByClassName("a").addEventListener("click", function(event) {
-  event.preventDefault();
+document.getElementsByClassName("a").onclick = function(e) {
+  e.preventDefault();
   var isInit = true; // indicates if the popup already been initialized.
   var isClosed = false; // indicates the state of the popup
   document.getElementById("popup").style.display = "block";
@@ -162,5 +162,5 @@ document.getElementsByClassName("a").addEventListener("click", function(event) {
     isClosed=true;
   }
   return false;
-})
+}
 };
