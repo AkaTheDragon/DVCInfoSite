@@ -125,7 +125,6 @@ document.getElementById("a").onclick = function(e) {
  e.preventDefault();
  document.getElementById("popup").showpopup();
 }
-};
 
 document.getElementById("popup").showpopup = function() {
  document.getElementById("popup").style.display = "block";
@@ -140,6 +139,7 @@ if(document.getElementById("popup").style.display == "block") {
    document.getElementById("page").style.display = "none";
    document.getElementById("page").className = "";
  }
+};
 };
 
 
