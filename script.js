@@ -162,5 +162,5 @@ document.getElementsByClassName("a").addEventListener("click", function(event) {
     isClosed=true;
   }
   return false;
-}
+})
 };
