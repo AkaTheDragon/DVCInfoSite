@@ -120,11 +120,12 @@ function parseNestedTable(nestedTable) {
     return table;
 }
 
-
+window.onload = function(){ 
 document.getElementById("a").onclick = function(e) {
  e.preventDefault();
  document.getElementById("popup").showpopup();
 }
+};
 
 document.getElementById("popup").showpopup = function() {
  document.getElementById("popup").style.display = "block";
