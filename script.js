@@ -120,16 +120,16 @@ function parseNestedTable(nestedTable) {
     return table;
 }
 
-// window.onload = function(){ 
-// document.getElementById("a").addEventListener("click", function(event) {
-//  event.preventDefault();
-//  document.getElementById("popup").showpopup();
-// })
-// };
+window.onload = function(){ 
+document.getElementsByClassName("a").onclick = function(e) {
+  e.preventDefault();
+  document.getElementById("popup").showpopup();
+}
+};
 
 window.onload = function(){ 
-document.getElementsByClassName("a").onclick = function() {
-  preventDefault();
+document.getElementsByClassName("a").onclick = function(e) {
+  e.preventDefault();
   var isInit = true; // indicates if the popup already been initialized.
   var isClosed = false; // indicates the state of the popup
   document.getElementById("popup").style.display = "block";
