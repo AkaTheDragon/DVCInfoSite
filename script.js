@@ -166,7 +166,6 @@ if(document.getElementById("popup").style.display == "block") {
 };
 
 window.onload=AddClickEvent;
-window.onload=showpopup;
 
 function AddClickEvent(){
     document.getElementsByClassName("a").onclick = function(e) {
