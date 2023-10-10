@@ -123,10 +123,11 @@ function parseNestedTable(nestedTable) {
 
 
 function ClickEvent(){
-    document.getElementsByClassName("a").onclick = function(e) {
-        e.preventDefault();
+    document.getElementsByClassName("a").addEventListener("click", function(event) {
+        event.preventDefault();
+        alert("prevented"); 
         document.getElementById("popup").showpopup();
-    }
+    })
 };
 
 
