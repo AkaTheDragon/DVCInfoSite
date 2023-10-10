@@ -51,9 +51,10 @@ function displayResults(dragons, searchTerm) {
         var dragonNameCell = document.createElement("td");
 		row.appendChild(dragonNameCell);
 		var dragonNameA = document.createElement("a");
-        dragonNameA.setAttribute("onclick", "event.preventDefault();");
+        dragonNameA.setAttribute("onclick", "event.preventDefault(); test()");
 		dragonNameA.setAttribute("href", "");
 		dragonNameA.setAttribute("id", dragonName);
+        dragonNameA.setAttribute("class", "a");
         dragonNameCell.appendChild(dragonNameA);
         dragonNameA.textContent = dragonName;
 
@@ -119,6 +120,11 @@ function parseNestedTable(nestedTable) {
         table.appendChild(nestedRow);
     }
     return table;
+}
+
+
+function test(){
+  alert("prevented"); 
 }
 
 
