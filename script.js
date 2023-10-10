@@ -153,7 +153,6 @@ function showpopup() {
  document.getElementById("iframe").src = "dragoninfo.html";
  document.getElementById("page").className = "darken";
  document.getElementById("page").style.display = "block";
- fillinfopage();
 }
 
 function closepopup() {
