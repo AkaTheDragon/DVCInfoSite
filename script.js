@@ -124,7 +124,7 @@ function parseNestedTable(nestedTable) {
 
 
 function OpenInfoPage(){
-  document.getElementById("popup").showpopup();
+  showpopup();
   var isInit = true; // indicates if the popup already been initialized.
   var isClosed = false; // indicates the state of the popup
   document.getElementById("popup").style.display = "block";
