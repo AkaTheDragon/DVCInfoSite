@@ -54,8 +54,8 @@ img {
 #popup { 
   display: none; 
   border: 1px black solid;
-  width: 400px; height: 200px; 
-  top:20px; left:20px;
+  width: 90%; height: 90%; 
+  top:5%; left:5%;
   background-color: white;
   z-index: 10;
   padding: 2em;
