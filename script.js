@@ -51,7 +51,7 @@ function displayResults(dragons, searchTerm) {
         var dragonNameCell = document.createElement("td");
 		row.appendChild(dragonNameCell);
 		var dragonNameA = document.createElement("a");
-        dragonNameA.setAttribute("onclick", "event.preventDefault(); test()");
+        dragonNameA.setAttribute("onclick", "event.preventDefault(); OpenInfoPage()");
 		dragonNameA.setAttribute("href", "");
 		dragonNameA.setAttribute("id", dragonName);
         dragonNameA.setAttribute("class", "a");
@@ -123,14 +123,7 @@ function parseNestedTable(nestedTable) {
 }
 
 
-function test(){
-  alert("prevented"); 
-}
-
-
-document.getElementsByClassName("a").addEventListener("click") = function(e) {
-  e.preventDefault();
-  alert("prevented"); 
+function OpenInfoPage(){
   document.getElementById("popup").showpopup();
 }
 
