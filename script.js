@@ -53,6 +53,7 @@ function displayResults(dragons, searchTerm) {
 		var dragonNameA = document.createElement("a");
 		dragonNameA.setAttribute("href", "");
 		dragonNameA.setAttribute("class", "a");
+        dragonNameA.setAttribute("onclick", "ClickEvent()");
         dragonNameCell.appendChild(dragonNameA);
         dragonNameA.textContent = dragonName;
 
@@ -120,54 +121,8 @@ function parseNestedTable(nestedTable) {
     return table;
 }
 
-window.onload = function(){ 
-document.getElementsByClassName("a").onclick = function(e) {
-  e.preventDefault();
-  document.getElementById("popup").showpopup();
-}
-};
 
-// window.onload = function(){ 
-// document.getElementsByClassName("a").onclick = function(e) {
-//   e.preventDefault();
-//   var isInit = true; // indicates if the popup already been initialized.
-//   var isClosed = false; // indicates the state of the popup
-//   document.getElementById("popup").style.display = "block";
-//   document.getElementById('iframe').src = "dragoninfo.html";
-//   document.getElementById('page').className = "darken";
-//   document.getElementById('page').onclick = function() {
-//     if(isInit){isInit=false;return;}
-//     if(isClosed){return;} //if the popup is closed, do nothing.
-//     document.getElementById("popup").style.display = "none";
-//     document.getElementById('page').className = "";
-//     isClosed=true;
-//   }
-//   return false;
-// }
-// };
-
-window.onload = function(){ 
-document.getElementById("popup").showpopup = function() {
- document.getElementById("popup").style.display = "block";
- document.getElementById("iframe").src = "dragoninfo.html";
- document.getElementById("page").className = "darken";
- document.getElementById("page").style.display = "block";
-}
-};
-
-window.onload = function(){ 
-document.getElementById("page").onclick = function() {
-if(document.getElementById("popup").style.display == "block") {
-   document.getElementById("popup").style.display = "none";
-   document.getElementById("page").style.display = "none";
-   document.getElementById("page").className = "";
- }
-};
-};
-
-window.onload=AddClickEvent;
-
-function AddClickEvent(){
+function ClickEvent(){
     document.getElementsByClassName("a").onclick = function(e) {
         e.preventDefault();
         document.getElementById("popup").showpopup();
