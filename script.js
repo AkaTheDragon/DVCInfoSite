@@ -130,7 +130,7 @@ function OpenInfoPage(){
   document.getElementById("popup").style.display = "block";
   document.getElementById('iframe').src = "dragoninfo.html";
   document.getElementById('page').className = "darken";
-  document.getElementById('page').onclick = function() {
+  document.getElementById('page').onclick = closepopup {
     if(isInit){isInit=false;return;}
     if(isClosed){return;} //if the popup is closed, do nothing.
     document.getElementById("popup").style.display = "none";
@@ -148,7 +148,7 @@ function showpopup() {
  document.getElementById("page").style.display = "block";
 }
 
-document.getElementById("page").onclick = function() {
+function closepopup {
 if(document.getElementById("popup").style.display == "block") {
    document.getElementById("popup").style.display = "none";
    document.getElementById("page").style.display = "none";
