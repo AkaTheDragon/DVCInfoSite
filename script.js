@@ -52,7 +52,7 @@ function displayResults(dragons, searchTerm) {
 		row.appendChild(dragonNameCell);
 		var dragonNameA = document.createElement("a");
 		dragonNameA.setAttribute("href", "");
-		dragonNameA.setAttribute("class", "a");
+		dragonNameA.setAttribute("id", dragonName);
         dragonNameCell.appendChild(dragonNameA);
         dragonNameA.textContent = dragonName;
 
@@ -120,13 +120,12 @@ function parseNestedTable(nestedTable) {
     return table;
 }
 
-window.onload = function(){ 
-document.getElementsByClassName("a").onclick = function(e) {
+
+document.getElementsByClassName("a").addEventListener("click") = function(e) {
   e.preventDefault();
   alert("prevented"); 
   document.getElementById("popup").showpopup();
 }
-};
 
 // window.onload = function(){ 
 // document.getElementsByClassName("a").onclick = function(e) {
