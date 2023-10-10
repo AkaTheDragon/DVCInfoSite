@@ -148,7 +148,7 @@ function showpopup() {
  document.getElementById("page").style.display = "block";
 }
 
-function closepopup {
+function closepopup() {
 if(document.getElementById("popup").style.display == "block") {
    document.getElementById("popup").style.display = "none";
    document.getElementById("page").style.display = "none";
