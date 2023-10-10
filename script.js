@@ -123,6 +123,13 @@ function parseNestedTable(nestedTable) {
 }
 
 
+function fillinfopage(){
+    var testinfo = document.getElementById("testinfo")
+    var dragonNameInfo = document.createElement("a");
+    testinfo.appendChild(dragonNameInfo);
+    dragonNameInfo.textContent = dragonName;
+}
+
 function OpenInfoPage(){
   showpopup();
   var isInit = true; // indicates if the popup already been initialized.
@@ -146,6 +153,7 @@ function showpopup() {
  document.getElementById("iframe").src = "dragoninfo.html";
  document.getElementById("page").className = "darken";
  document.getElementById("page").style.display = "block";
+ fillinfopage();
 }
 
 function closepopup() {
