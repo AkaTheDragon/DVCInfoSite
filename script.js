@@ -166,3 +166,4 @@ document.getElementById("page").addEventListener("click", function() {
         document.getElementById("page").className = "";
     }   
 };
+)
