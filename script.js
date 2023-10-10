@@ -141,7 +141,7 @@ function OpenInfoPage(){
   alert("prevented"); 
 }
 
-document.getElementById("popup").showpopup = function() {
+function showpopup {
  document.getElementById("popup").style.display = "block";
  document.getElementById("iframe").src = "dragoninfo.html";
  document.getElementById("page").className = "darken";
