@@ -125,6 +125,8 @@ function parseNestedTable(nestedTable) {
 
 function OpenInfoPage(){
   document.getElementById("popup").showpopup();
+  
+  alert("prevented"); 
 }
 
 // window.onload = function(){ 
