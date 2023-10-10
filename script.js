@@ -165,5 +165,4 @@ document.getElementById("page").addEventListener("click", function() {
         document.getElementById("page").style.display = "none";
         document.getElementById("page").className = "";
     }   
-};
-)
+})
