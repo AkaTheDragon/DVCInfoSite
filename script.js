@@ -51,6 +51,7 @@ function displayResults(dragons, searchTerm) {
         var dragonNameCell = document.createElement("td");
 		row.appendChild(dragonNameCell);
 		var dragonNameA = document.createElement("a");
+        dragonNameA.setAttribute("onclick", "event.preventDefault();");
 		dragonNameA.setAttribute("href", "");
 		dragonNameA.setAttribute("id", dragonName);
         dragonNameCell.appendChild(dragonNameA);
