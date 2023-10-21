@@ -54,7 +54,7 @@ img {
 #popup { 
   display: none; 
   border: 1px black solid;
-  width: 60%; height: 60%; 
+  width: 70%; height: 60%; 
   top:5%; left:5%;
   background-color: white;
   z-index: 10;
